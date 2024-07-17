@@ -2,7 +2,7 @@
 <html>
   <body>
     <h1>Git Flow Tutorial</h1>
-    <h2>Run:</h2>
+    <h1>Feature</h1>
     <h2>
       1) git init => <em>initialize repository</em> =>
       <em>created master branch</em>
@@ -25,12 +25,27 @@
     <p id="minResult"></p>
     <img src="./assets/before-git-flow-finish.png" />
     <h2>6) git flow feature finish namefeature</h2>
+    <img src="./assets/after-git-flow-finish.png" />
     <p>
       IMPORTANT!: using (start - finish) commands requires a minimum of two
       commits to see the history of the temporary branch (<strong
         >Git Flow documentation</strong
       >).
     </p>
+    <p>*********************************</p>
+    <h1>Release</h1>
+    <h2>
+      1) git flow release start 0.1.0 =>
+      <em>short branch release/0.1.0 created</em>
+    </h2>
+    <h2>2) Make some change to commit</h2>
+    <h2>3) git add .</h2>
+    <h2>4) git commit</h2>
+    <h2>
+      5) git flow release finish 0.1.0 =>
+      <em>short branch release/0.1.0 merged and deleted</em>
+    </h2>
+    <img src="./assets/after-git-flow-release-finish.png" />
 
     <script>
       let addFunction = (a, b) => a + b;
